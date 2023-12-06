@@ -12,7 +12,7 @@ _____
 **Answer**: 🌿🌿Pure function make copies of data and pass them along. We need specific constructs in the language to be able to easily program using copies.
 ___
 
-### Mutability is dangerous
+### Mutability is dangerous 🚨🚨
 
 Avoiding mutability lies at the heart of functional programming.
 
@@ -42,7 +42,7 @@ static List<String> replan(List<String> plan, String newCity, String beforeCity)
 > 🧠 **Intuition** is very important in programming. The more intuitive the API you work with, the more effective you will be and the fewer bugs you will make.
 
 
-## Fighting mutability by working with copies
+## Fighting mutability by working with copies 🌿
 
 Pure functions don't mutate any existing values. They can't modify anything from the argument list or the global scope. **However, they can mutate locally created values**.
 
@@ -56,7 +56,7 @@ static List<String> replan(List<String> plan, String newCity, String beforeCity)
 }
 ```
 
-## Shared Mutable State
+## Shared Mutable State 🍉
 
 A **state** is an instance of a value that is stored in one place and can be accessed from the code. If this value can be modified, we have **mutable state**. Furthermore, if this state can be accessed from different parts of the code, it's a **shared mutable state**.
 
@@ -70,7 +70,7 @@ Flowchart TD
 
 **Shared mutable state is the building block of imperative programming.**
 
-## Dealing with the moving parts
+## Dealing with the moving parts 🎯
 
 - **Our approach - Java**
 
@@ -129,16 +129,16 @@ def replan(plan: List[String], newCity: String, beforeCity: String): List[String
 }
 ```
 
-`List[String]`   
+`List[String]`   🐼   
 `slice(from, to): List[String]`: Return a new list that contains some elements from this list: a slice beginning at the **`from`** index and ending before the **`to`** index.
 
-`List[String]`   
+`List[String]` 🐨   
 `appended(element): List[String]`: Returns a new list contains all the elements from this list with the **`element`** at the end  
 
-`List[String]`   
+`List[String]` (●'◡'●)   
 `appendedAll(suffix: List[String]): List[String]`: Returns a new list that contians all the elements from this list with all the elements from the **`suffix`** list appended at the end.
 
-## Immutable values in Scala
+## Immutable values in Scala 🧠
 
 Scala really has built-in support for immutability. You can prove that 
 
@@ -158,7 +158,7 @@ appleBookMango.size
 
 ***Immutability makes us focus on relations between values***
 
-## Summary
+## Summary 💻
 
 - Mutability is dangerous
 - Fighting mutability by using copies
