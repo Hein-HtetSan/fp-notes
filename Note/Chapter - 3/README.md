@@ -62,7 +62,8 @@ A **state** is an instance of a value that is stored in one place and can be acc
 
 ```mermaid
 Flowchart TD
-    **Shared** --> This value can be accessed from many parts of the program
+    **Shared** --> This value can be accessed from many parts of the program   
+    **
 
 ```
 
